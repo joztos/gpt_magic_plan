@@ -242,7 +242,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generatewikipediaPage(e)}
             >
-              Generate Wikipedia page &rarr;
+              Genera Planeación de Clase &rarr;
             </button>
           )}
           {loading && (
