@@ -1,5 +1,5 @@
 export const getStylePrompt = (style) => {
-  if (style === "Classic") {
+  if (style === "Primero de Primaria") {
     return "";
   } else if (style === "In the future") {
     return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
