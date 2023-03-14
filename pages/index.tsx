@@ -198,14 +198,14 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           <Github />
-          <p>Star on GitHub</p>
+          <p>Github Josue</p>
         </a>
 
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate Wikipedia page
+          Planeación de Clase
         </h1>
         <p className="text-slate-500 mt-5">
-          47,118 fake articles generated so far.
+          47,118 clases generadas con ai.
         </p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
@@ -218,8 +218,8 @@ const Home: NextPage = () => {
             />
 
             <p className="text-left font-medium">
-              Write wikipedia article{" "}
-              <span className="text-slate-500">(or just a topic)</span>
+              Escribe el tema para la clase{" "}
+              <span className="text-slate-500">(puede ser el que sea)</span>
             </p>
           </div>
           <textarea
@@ -231,7 +231,7 @@ const Home: NextPage = () => {
           />
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
-            <p className="text-left font-medium">Select your style.</p>
+            <p className="text-left font-medium">Selecciona el Nivel Escolar.</p>
           </div>
           <div className="block">
             <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
