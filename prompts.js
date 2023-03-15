@@ -1,18 +1,19 @@
-export const getStylePrompt = (style) => {
-  if (style === "Primero de Primaria") {
-    return "";
-  } else if (style === "Segundo de Primaria") {
-    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
-  } else if (style === "Tercero de Primaria") {
-    return ", with this constraints: We need to generate completely fake text and sections, things that does not exist in the real world:";
-  } else if (style === "Cuarto de Primaria") {
-    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
-  } else if (style === "Quinto de Primaria") {
-    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
-  } else if (style === "Sexto de Primaria") {
-    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
+export const getStylePrompt = (grade) => {
+  if (grade === "Primero de Primaria") {
+    return "Escribe una historia corta utilizando palabras sencillas y oraciones cortas. Incluye un personaje, un lugar y una acción.";
+  } else if (grade === "Segundo de Primaria") {
+    return "Escribe una historia que tenga al menos dos personajes, una situación problemática y una solución. Utiliza oraciones simples y vocabulario adecuado para tu nivel.";
+  } else if (grade === "Tercero de Primaria") {
+    return "Crea una historia utilizando descripciones detalladas de los personajes y el entorno. Incluye un conflicto y su resolución, y asegúrate de utilizar oraciones más complejas.";
+  } else if (grade === "Cuarto de Primaria") {
+    return "Escribe una narración que incluya elementos de fantasía o ciencia ficción. Asegúrate de describir a los personajes y el entorno de forma detallada, e incluir un conflicto y su resolución.";
+  } else if (grade === "Quinto de Primaria") {
+    return "Redacta un texto argumentativo sobre un tema de actualidad. Asegúrate de presentar una postura clara, argumentos sólidos y ejemplos para respaldar tu opinión.";
+  } else if (grade === "Sexto de Primaria") {
+    return "Escribe un ensayo que compare y contraste dos temas relacionados. Asegúrate de incluir una introducción, desarrollo de argumentos y una conclusión sólida.";
   }
 };
+
 
 export const promptCreateNewSection = (pageName, currentSections) => {
   let currentSectionsNames = currentSections.map((section) => section.header);
