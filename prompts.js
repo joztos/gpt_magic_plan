@@ -6,13 +6,14 @@ export const getStylePrompt = (grade) => {
   } else if (grade === "Tercero de Primaria") {
     return "Crea una historia utilizando descripciones detalladas de los personajes y el entorno. Incluye un conflicto y su resolución, y asegúrate de utilizar oraciones más complejas.";
   } else if (grade === "Cuarto de Primaria") {
-    return "Escribe una narración que incluya elementos de fantasía o ciencia ficción. Asegúrate de describir a los personajes y el entorno de forma detallada, e incluir un conflicto y su resolución.";
+    return "Redacta un informe breve sobre un tema de interés personal o un tema que estés estudiando en la escuela. Asegúrate de incluir hechos e información relevante.";
   } else if (grade === "Quinto de Primaria") {
-    return "Redacta un texto argumentativo sobre un tema de actualidad. Asegúrate de presentar una postura clara, argumentos sólidos y ejemplos para respaldar tu opinión.";
+    return "Escribe un texto argumentativo sobre un tema de actualidad o relevante para ti. Asegúrate de presentar una postura clara, argumentos sólidos y ejemplos para respaldar tu opinión.";
   } else if (grade === "Sexto de Primaria") {
-    return "Escribe un ensayo que compare y contraste dos temas relacionados. Asegúrate de incluir una introducción, desarrollo de argumentos y una conclusión sólida.";
+    return "Redacta un ensayo que compare y contraste dos temas relacionados. Asegúrate de incluir una introducción, desarrollo de argumentos y una conclusión sólida.";
   }
 };
+
 
 
 export const promptCreateNewSection = (pageName, currentSections) => {
