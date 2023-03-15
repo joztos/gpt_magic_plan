@@ -10,16 +10,31 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type VibeType = "Primero de Primaria" | "Tercero de Primaria" | "Quinto de Primaria";
+export type VibeType =
+  | "Primero de Primaria"
+  | "Segundo de Primaria"
+  | "Tercero de Primaria"
+  | "Cuarto de Primaria"
+  | "Quinto de Primaria"
+  | "Sexto de Primaria";
 
 interface DropDownProps {
   vibe: VibeType;
   setVibe: (vibe: VibeType) => void;
 }
 
-let vibes: VibeType[] = ["Primero de Primaria", "Tercero de Primaria", "Quinto de Primaria"];
+let vibes: VibeType[] = [
+  "Primero de Primaria",
+  "Segundo de Primaria",
+  "Tercero de Primaria",
+  "Cuarto de Primaria",
+  "Quinto de Primaria",
+  "Sexto de Primaria",
+];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
+  // Rest of the component code remains the same
+}
   return (
     <Menu as="div" className="relative block text-left w-full">
       <div>
