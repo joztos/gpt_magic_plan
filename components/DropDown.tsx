@@ -86,3 +86,5 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
         </Menu.Items>
       </Transition>
     </Menu>
+  );
+}

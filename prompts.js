@@ -1,9 +1,9 @@
 export const getStylePrompt = (style) => {
   if (style === "Primero de Primaria") {
     return "";
-  } else if (style === "In the future") {
+  } else if (style === "Segundo de Primaria") {
     return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
-  } else if (style === "Fake") {
+  } else if (style === "Tercero de Primaria") {
     return ", with this constraints: We need to generate completely fake text and sections, things that does not exist in the real world:";
   }
 };
