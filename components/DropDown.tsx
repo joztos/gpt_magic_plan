@@ -33,8 +33,6 @@ let vibes: VibeType[] = [
 ];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
-  // Rest of the component code remains the same
-}
   return (
     <Menu as="div" className="relative block text-left w-full">
       <div>
@@ -88,5 +86,3 @@ export default function DropDown({ vibe, setVibe }: DropDownProps) {
         </Menu.Items>
       </Transition>
     </Menu>
-  );
-}
