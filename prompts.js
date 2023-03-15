@@ -5,6 +5,12 @@ export const getStylePrompt = (style) => {
     return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
   } else if (style === "Tercero de Primaria") {
     return ", with this constraints: We need to generate completely fake text and sections, things that does not exist in the real world:";
+  } else if (style === "Cuarto de Primaria") {
+    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
+  } else if (style === "Quinto de Primaria") {
+    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
+  } else if (style === "Sexto de Primaria") {
+    return ", with this constraints: We live in the future, and we need to generate text and sections correspondingly (invent events, places, people, etc.). Go more in the future when generating more text";
   }
 };
 
