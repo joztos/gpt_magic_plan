@@ -14,14 +14,8 @@ export const getStylePrompt = (grade) => {
   }
 };
 
-
-
-export const promptCreateNewSection = (pageName, currentSections) => {
-  let currentSectionsNames = currentSections.map((section) => section.header);
-  return `Here are the sections names created for the page ${pageName}:\n${currentSectionsNames}. Return a new section with a description. Result is in a json format like this: \{"header": "Event A ", "description": "This event happens/describe ..."}\}`;
-};
 export const promptSections = (pageName, style) => {
-  return `Can you return the 3 sections related to this subject: '${pageName}'
+  return `Genera una planificación de clase para enseñar acerca de '${pageName}'. La planificación debe incluir las siguientes 7 secciones: Objetivos de aprendizaje, Contenido, Actividades, Evaluación, Materiales, Estrategias de enseñanza y Retroalimentación. Asegúrate de que la planificación sea coherente y bien organizada, y que refleje los objetivos de enseñanza que deseas lograr.: 
   ${getStylePrompt(
     style
   )}.In a json format like this, in the order of appearance in the page: [\{{"header": "Event A ", "description": "This event happens/describe ..."}}, ...]`;
@@ -32,5 +26,5 @@ export const promptContinue = (pageName, currentSection, style) => {
     currentSection.header
   }" for the page ${pageName}:\n${
     currentSection.description
-  }.\n.Continue the section with 1 more paragraph ${getStylePrompt(style)}:\n`;
+  }.\n.Regenera la seccion con una variacion diferente ${getStylePrompt(style)}:\n`;
 };

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { decode } from "punycode";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import DropDown, { VibeType } from "../components/DropDown";
+import DropDown, { GradoEscolar } from "../components/DropDown";
 import Footer from "../components/Footer";
 import Github from "../components/GitHub";
 import Header from "../components/Header";
@@ -20,7 +20,7 @@ import {
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [wikipediaPage, setWikipediaPage] = useState("");
-  const [vibe, setVibe] = useState<VibeType>("Primero de Primaria");
+  const [vibe, setVibe] = useState<GradoEscolar>("Primero de Primaria");
   const [generatedSections, setgeneratedSections] = useState([]);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const continueSection = async (e: any, sectionIndex) => {
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Wiki generator</title>
+        <title>=Navi Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

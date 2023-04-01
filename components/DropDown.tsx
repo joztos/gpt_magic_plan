@@ -10,7 +10,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type VibeType =
+export type GradoEscolar =
   | "Primero de Primaria"
   | "Segundo de Primaria"
   | "Tercero de Primaria"
@@ -19,11 +19,11 @@ export type VibeType =
   | "Sexto de Primaria";
 
 interface DropDownProps {
-  vibe: VibeType;
-  setVibe: (vibe: VibeType) => void;
+  vibe: GradoEscolar;
+  setVibe: (vibe: GradoEscolar) => void;
 }
 
-let vibes: VibeType[] = [
+let vibes: GradoEscolar[] = [
   "Primero de Primaria",
   "Segundo de Primaria",
   "Tercero de Primaria",
