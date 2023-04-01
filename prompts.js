@@ -21,7 +21,7 @@ export const promptCreateNewSection = (pageName, currentSections) => {
   return `Here are the sections names created for the page ${pageName}:\n${currentSectionsNames}. Return a new section with a description. Result is in a json format like this: \{"header": "Event A ", "description": "This event happens/describe ..."}\}`;
 };
 export const promptSections = (pageName, style) => {
-  return `Can you return the 3 sections related to this subject: '${pageName}'
+  return `Can you return  7 sections of a planning class related to this subject: '${pageName}'
   ${getStylePrompt(
     style
   )}.In a json format like this, in the order of appearance in the page: [\{{"header": "Event A ", "description": "This event happens/describe ..."}}, ...]`;
@@ -32,5 +32,5 @@ export const promptContinue = (pageName, currentSection, style) => {
     currentSection.header
   }" for the page ${pageName}:\n${
     currentSection.description
-  }.\n.Continue the section with 1 more paragraph ${getStylePrompt(style)}:\n`;
+  }.\n.regenerate the section with 1 more paragraph ${getStylePrompt(style)}:\n`;
 };
