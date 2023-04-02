@@ -1,1 +1,0 @@
-# gpt_magic_plan
