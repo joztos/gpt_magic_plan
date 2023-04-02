@@ -10,7 +10,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type GradoEscolar =
+export type getStylePrompt =
   | "Primero de Primaria"
   | "Segundo de Primaria"
   | "Tercero de Primaria"
@@ -19,11 +19,11 @@ export type GradoEscolar =
   | "Sexto de Primaria";
 
 interface DropDownProps {
-  vibe: GradoEscolar;
-  setVibe: (vibe: GradoEscolar) => void;
+  vibe: getStylePrompt;
+  setVibe: (vibe: getStylePrompt) => void;
 }
 
-let vibes: GradoEscolar[] = [
+let vibes: getStylePrompt[] = [
   "Primero de Primaria",
   "Segundo de Primaria",
   "Tercero de Primaria",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { decode } from "punycode";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import DropDown, { GradoEscolar } from "../components/DropDown";
+import DropDown, { getStylePrompt } from "../components/DropDown";
 import Footer from "../components/Footer";
 import Github from "../components/GitHub";
 import Header from "../components/Header";
@@ -20,7 +20,7 @@ import {
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [wikipediaPage, setWikipediaPage] = useState("");
-  const [vibe, setVibe] = useState<GradoEscolar>("Primero de Primaria");
+  const [vibe, setVibe] = useState<getStylePrompt>("Primero de Primaria");
   const [generatedSections, setgeneratedSections] = useState([]);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const continueSection = async (e: any, sectionIndex) => {
